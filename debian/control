@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/mrud/deb-smart-proxy
 
 Package: foreman-proxy
 Architecture: all
-Depends: ruby, rubygems, libopenssl-ruby, libsinatra-ruby, libjson-ruby, libnet-ping-ruby, rake, ${misc:Depends}
+Depends: ruby | ruby-interpreter, rubygems, libopenssl-ruby, libsinatra-ruby, libjson-ruby, libnet-ping-ruby, rake, ${misc:Depends}
 Description: RESTful proxies for DNS, DHCP, TFTP, and Puppet
  Smart-Proxy is a project which provides a RESTful API to various sub-systems
  like DNS, DHCP, TFTP, and Puppet.
