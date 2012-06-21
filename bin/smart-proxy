@@ -3,7 +3,6 @@
 $LOAD_PATH.unshift *Dir["#{File.dirname(__FILE__)}/../lib"]
 APP_ROOT = "#{File.dirname(__FILE__)}/.."
 
-require "rubygems"
 require "proxy"
 require "sinatra-patch"
 require "json"

@@ -28,7 +28,6 @@
 #
 # If the ssl keys are not specified then defaults are chosen based upon the platform
 
-require 'rubygems'
 require 'rest-client'
 require 'getoptlong'
 require 'rdoc/usage'

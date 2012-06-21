@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'win32/open3'
 
 module Proxy::DHCP
