@@ -1,12 +1,12 @@
 Source: foreman-proxy
 Section: net
 Priority: extra
-Maintainer: Jochen Schalanda <jochen@schalanda.name>
-Build-Depends: debhelper (>= 7.0.50~)
-Standards-Version: 3.9.1
+Maintainer: Ulrich Dangel <mru@spamt.net>
+Build-Depends: debhelper (>= 9.0~)
+Standards-Version: 3.9.3
 Homepage: http://theforeman.org/projects/smart-proxy
-Vcs-Git: git://github.com/ohadlevy/smart-proxy.git
-Vcs-Browser: https://github.com/ohadlevy/smart-proxy
+Vcs-Git: git://github.com/mrud/deb-smart-proxy.git
+Vcs-Browser: https://github.com/mrud/deb-smart-proxy
 
 Package: foreman-proxy
 Architecture: all
