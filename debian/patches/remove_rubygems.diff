@@ -1,0 +1,40 @@
+Description: Remove require "rubygems" from ruby files
+Origin: Debian
+Author: Ulrich Dangel <mruspamt.net>
+--- a/bin/smart-proxy
++++ b/bin/smart-proxy
+@@ -3,7 +3,6 @@
+ $LOAD_PATH.unshift *Dir["#{File.dirname(__FILE__)}/../lib"]
+ APP_ROOT = "#{File.dirname(__FILE__)}/.."
+ 
+-require "rubygems"
+ require "proxy"
+ require "sinatra-patch"
+ require "json"
+--- a/extra/query.rb
++++ b/extra/query.rb
+@@ -28,7 +28,6 @@
+ #
+ # If the ssl keys are not specified then defaults are chosen based upon the platform
+ 
+-require 'rubygems'
+ require 'rest-client'
+ require 'getoptlong'
+ require 'rdoc/usage'
+--- a/lib/proxy.rb
++++ b/lib/proxy.rb
+@@ -5,7 +5,6 @@
+   require "proxy/settings"
+   require "fileutils"
+   require "pathname"
+-  require "rubygems"       # required for testing
+   require "proxy/log"
+   require "proxy/util"
+   require "proxy/tftp"     if SETTINGS.tftp
+--- a/lib/proxy/dhcp/server/native_ms.rb
++++ b/lib/proxy/dhcp/server/native_ms.rb
+@@ -1,4 +1,3 @@
+-require 'rubygems'
+ require 'win32/open3'
+ 
+ module Proxy::DHCP
