@@ -1,0 +1,15 @@
+Description: Fix paths in the binary
+Origin: Debian
+Author: Greg Sutcliffe <greg.sutcliffe@gmail.com>
+--- a/bin/smart-proxy
++++ b/bin/smart-proxy
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env ruby
+ 
+-$LOAD_PATH.unshift *Dir["#{File.dirname(__FILE__)}/../lib"]
+-APP_ROOT = "#{File.dirname(__FILE__)}/.."
++$LOAD_PATH.unshift *Dir["/usr/share/foreman-proxy/lib"]
++APP_ROOT = "/usr/share/foreman-proxy"
+ 
+ # Test for 1.9
+ if (RUBY_VERSION.split('.').map{|s|s.to_i} <=> [1,9,0]) > 0 then

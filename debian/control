@@ -2,7 +2,7 @@ Source: foreman-proxy
 Section: net
 Priority: extra
 Maintainer: Ulrich Dangel <mru@spamt.net>
-Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2.17~)
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2.7~)
 Standards-Version: 3.9.3
 Homepage: http://theforeman.org/projects/smart-proxy
 Vcs-Git: git://github.com/mrud/deb-smart-proxy.git
@@ -16,7 +16,7 @@ Depends: libruby,
          rake,
          ruby | ruby-interpreter,
          ruby-json,
-         ruby-sinatra,
+         ruby-sinatra | libsinatra-ruby,
          ${shlibs:Depends}, ${misc:Depends}
 # json (>= 0), sinatra (>= 0), net/ping (>= 0)
 Description: RESTful proxies for DNS, DHCP, TFTP, and Puppet
