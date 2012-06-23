@@ -5,6 +5,12 @@
 %:
 	dh $@ --buildsystem=ruby --with ruby
 
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f config/settings.yml
+
 override_dh_auto_install:
+	cp debian/settings.yml config/settings.yml
 	dh_auto_install -- --buildsystem=ruby --with ruby
 	rm -rf debian/foreman-proxy/usr/lib/
+	rm -f config/settings.yml
