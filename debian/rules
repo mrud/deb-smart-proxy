@@ -1,7 +1,10 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
-export DH_RUBY_USE_DH_AUTO_INSTALL_DESTDIR=1
-#export DH_VERBOSE=1
+# export DH_VERBOSE=1
 
 %:
 	dh $@ --buildsystem=ruby --with ruby
+
+override_dh_auto_install:
+	dh_auto_install -- --buildsystem=ruby --with ruby
+	rm -rf debian/foreman-proxy/usr/lib/
