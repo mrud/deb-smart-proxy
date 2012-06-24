@@ -22,6 +22,6 @@ be placed in the configuration file
 
 * `/etc/foreman-proxy/settings.yml`
   The proxy configuration file
-~
-~
-~
+
+## Author
+`Foreman Smart-proxy` was written by Ohad Levy <ohadlevy@gmail.com>. This manpage was written by Greg Sutcliffe <greg.sutcliffe@gmail.com> for Debian.
