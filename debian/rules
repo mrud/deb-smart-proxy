@@ -8,6 +8,11 @@
 override_dh_auto_clean:
 	dh_auto_clean
 	rm -f config/settings.yml
+	rm -f debian/foreman-proxy.1
+
+override_dh_auto_build:
+	dh_auto_build
+	ronn -r debian/*.ronn
 
 override_dh_auto_install:
 	cp debian/settings.yml config/settings.yml
