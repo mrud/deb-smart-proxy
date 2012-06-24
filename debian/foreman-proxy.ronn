@@ -15,8 +15,14 @@ further information on configuring the proxy, and Foreman.
 
 ## OPTIONS
 
-The smart-proxy takes no options - all configuration directives should
-be placed in the configuration file
+By default, smart-proxy will attempt to run using rubygems, in developer mode. If
+you wish to run without rubygems, using system libraries, set the PRODUCTION_MODE
+environment variable, like so:
+
+PRODUCTION_MODE=true smart-proxy
+
+smart-proxy has no commandline arguments - all directives can be found in the
+configuration file.
 
 ## FILES
 
